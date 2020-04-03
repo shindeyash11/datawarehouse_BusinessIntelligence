@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.18363.418]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\shind> cd c:\
+
+c:\>mkdir tmp
+A subdirectory or file tmp already exists.
+
+c:\>cd tmp
+
+c:\tmp>dir
+ Volume in drive C has no label.
+ Volume Serial Number is FCE2-C9B7
+
+ Directory of c:\tmp
+
+01/22/2020  04:30 AM    <DIR>          .
+01/22/2020  04:30 AM    <DIR>          ..
+01/22/2020  04:50 AM               595 salesout.fmt
+01/22/2020  04:51 AM             1,113 salesout.txt
+               2 File(s)          1,708 bytes
+               2 Dir(s)  483,762,454,528 bytes free
+
+c:\tmp>bcp sales out c:\tmp\salesout.csv -S DESKTOP-O331RO8\SS2019 -d pubs -T
+
+Enter the file storage type of field stor_id [char]:
+Enter prefix-length of field stor_id [2]: 0
+Enter length of field stor_id [4]:
+Enter field terminator [none]:
+
+Enter the file storage type of field ord_num [char]:
+Enter prefix-length of field ord_num [2]: 0
+Enter length of field ord_num [20]:
+Enter field terminator [none]:
+
+Enter the file storage type of field ord_date [datetime]:
+Enter prefix-length of field ord_date [0]: 0
+Enter field terminator [none]:
+
+Enter the file storage type of field qty [smallint]:
+Enter prefix-length of field qty [0]: 0
+Enter field terminator [none]:
+
+Enter the file storage type of field payterms [char]:
+Enter prefix-length of field payterms [2]: 0
+Enter length of field payterms [12]:
+Enter field terminator [none]:
+
+Enter the file storage type of field title_id [char]:
+Enter prefix-length of field title_id [2]: 0
+Enter length of field title_id [6]:
+Enter field terminator [none]:
+
+Do you want to save this format information in a file? [Y/n] Y
+Host filename [bcp.fmt]: c:\tmp\salesbulkout.fmt
+
+Starting copy...
+
+21 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 437    Average : (48.05 rows per sec.)
+
+c:\tmp>notepad salesbulkout.csv
+
+c:\tmp>notepad salesout.csv
+
+c:\tmp>bcp sales out c:\tmp\salesout.csv -S DESKTOP-O331RO8\SS2019 -d pubs -T -f salesbulkoutv1.fmt
+
+Starting copy...
+
+21 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 469    Average : (44.78 rows per sec.)
+
+c:\tmp>notepad salesout.csv
+
+c:\tmp>

@@ -1,0 +1,6 @@
+ID	First	Last	Rate	Title	Zipcode
+1	Jon	Smith	15	Sales	029060
+2	Robert	Jones	30.25	Marketing	02901
+3	
+4	Betty 	Rubble	31	Warehouse	02903
+5	Chris	Roberts	12	Marketing	02901

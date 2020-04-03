@@ -1,0 +1,781 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/26/2020 3:13:00 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-O331RO8"
+  DTS:CreatorName="DESKTOP-O331RO8\shind"
+  DTS:Description="SSIS Package created from export wizard to create show SSIS creation"
+  DTS:DTSID="{7D6D0DA7-F62D-419B-A8A8-02BA32CE681D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1900.63"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="Week02_Export_Health_Details"
+  DTS:VersionGUID="{FFBD7665-1A75-42F3-8C66-DBE1DD99AC76}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5194035E-3E2C-4673-9CE3-9DDA6027BE0C}"
+      DTS:ObjectName="DestinationConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="c:\tmp\Health_Details.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CredentialNumber"
+              DTS:DTSID="{552E99CC-C6E9-4AA6-9752-B4A15B3CC48B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{BCCAA854-3815-4F0A-A071-939E68B188A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{76D3DE9C-B120-4C9D-8231-D41F682B4DFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MiddleName"
+              DTS:DTSID="{571FD383-E51A-4E2E-B701-6944B3C8C446}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CredentIaltype"
+              DTS:DTSID="{5CD775C4-1664-461D-A042-BD77B4E440A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="status"
+              DTS:DTSID="{966C1E8E-E3D4-4823-9B37-90C480E6B9F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="birthYear"
+              DTS:DTSID="{9B7F2133-2A85-44E4-BABA-3BF300289679}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ceduedate"
+              DTS:DTSID="{B90116FD-731D-40DD-BC38-FBA85DE757C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Firstissuedate"
+              DTS:DTSID="{9D5A7B60-A765-4CD3-934E-364F88A590FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lastissuedate"
+              DTS:DTSID="{70C83199-94A7-43DA-8D12-1A8EDF57359F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Expirationdate"
+              DTS:DTSID="{E7B6BB19-382D-4A45-BE11-6274E444ECDA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Actiontaken"
+              DTS:DTSID="{0DBBDEBA-A84D-484B-9CCA-28C7F66EFFFE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{326E42B2-AD39-435B-9199-C3FD94BAB020}"
+      DTS:ObjectName="SourceConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-O331RO8\SS2019;User ID=sa;Initial Catalog=Health;Provider=SQLNCLI11;Auto Translate=false;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzOJbTFrgIEejAciLrmbX2wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADW1dDAZm6RZxIpvogg701fTdhHWGlwYF1fkiv1KTy8uQAAAAAOgAAAAAIAACAAAAC9oo2dPlS5xgumf2FRWr8/2EPZdmdJ2mx1PltMDdbCmiAAAADhJVGIJ17ZCYRYz2484bMBPnwDZXXV0LyB4u7fxxCgKkAAAAB8HAjbxcP3nQy0m5yMBm/TPA/XpMzdSHXsxNRLpHshxBRtHIQrDyHzVvOxJTRU00vK0f2WvoudXrr4lKwuCWVW</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{04A72B9A-5E04-4362-B0E1-F944EC491A5F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Destination - Health_Details_txt"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Destination - Health_Details_txt"
+              validateExternalMetadata="False"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[CredentialNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="CredentialNumber"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[CredentialNumber]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentialNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[MiddleName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="MiddleName"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[MiddleName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[CredentIaltype]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="CredentIaltype"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[CredentIaltype]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentIaltype]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[status]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="status"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[status]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[status]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[birthYear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="birthYear"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[birthYear]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[birthYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[Ceduedate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Ceduedate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Ceduedate]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Ceduedate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[Firstissuedate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Firstissuedate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Firstissuedate]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Firstissuedate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[Lastissuedate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Lastissuedate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Lastissuedate]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Lastissuedate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[Expirationdate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Expirationdate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Expirationdate]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Expirationdate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].Columns[Actiontaken]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Actiontaken"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Actiontaken]"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Actiontaken]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[CredentialNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CredentialNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[MiddleName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[CredentIaltype]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CredentIaltype" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[birthYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="birthYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Ceduedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ceduedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Firstissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Firstissuedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Lastissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lastissuedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Expirationdate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Expirationdate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input].ExternalColumns[Actiontaken]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Actiontaken" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - test"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Source - test"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[test]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - test.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentialNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[CredentialNumber]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentialNumber]"
+                      name="CredentialNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                      name="MiddleName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentIaltype]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[CredentIaltype]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[CredentIaltype]"
+                      name="CredentIaltype"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[status]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[status]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[status]"
+                      name="status"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[birthYear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[birthYear]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[birthYear]"
+                      name="birthYear"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Ceduedate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Ceduedate]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Ceduedate]"
+                      name="Ceduedate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Firstissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Firstissuedate]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Firstissuedate]"
+                      name="Firstissuedate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Lastissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Lastissuedate]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Lastissuedate]"
+                      name="Lastissuedate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Expirationdate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Expirationdate]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Expirationdate]"
+                      name="Expirationdate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Actiontaken]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Actiontaken]"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].Columns[Actiontaken]"
+                      name="Actiontaken"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[CredentialNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CredentialNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="MiddleName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[CredentIaltype]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CredentIaltype" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[birthYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="birthYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Ceduedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ceduedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Firstissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Firstissuedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Lastissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Lastissuedate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Expirationdate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Expirationdate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output].ExternalColumns[Actiontaken]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Actiontaken" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[CredentialNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[CredentialNumber]"
+                      name="CredentialNumber" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                      name="MiddleName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[CredentIaltype]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[CredentIaltype]"
+                      name="CredentIaltype" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[status]"
+                      name="status" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[birthYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[birthYear]"
+                      name="birthYear" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Ceduedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Ceduedate]"
+                      name="Ceduedate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Firstissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Firstissuedate]"
+                      name="Firstissuedate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Lastissuedate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Lastissuedate]"
+                      name="Lastissuedate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Expirationdate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Expirationdate]"
+                      name="Expirationdate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Actiontaken]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[Actiontaken]"
+                      name="Actiontaken" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 1\Destination - Health_Details_txt.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 1\Source - test.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+</DTS:Executable>

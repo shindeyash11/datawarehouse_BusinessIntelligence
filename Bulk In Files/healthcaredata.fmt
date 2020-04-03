@@ -1,0 +1,14 @@
+14.0
+12
+1       SQLCHAR             0       100     ","    1     CredentialNumber                     SQL_Latin1_General_CP1_CI_AS
+2       SQLCHAR             0       100     ","    2     LastName                             SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR             0       100     ","    3     FirstName                            SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR             0       100     ","    4     MiddleName                           SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR             0       100     ","    5     CredentIaltype                       SQL_Latin1_General_CP1_CI_AS
+6       SQLCHAR             0       100     ","    6     status                               SQL_Latin1_General_CP1_CI_AS
+7       SQLCHAR             0       100     ","    7     birthYear                            SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR             0       100     ","    8     Ceduedate                            SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR             0       100     ","    9     Firstissuedate                       SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR             0       100     ","    10    Lastissuedate                        SQL_Latin1_General_CP1_CI_AS
+11      SQLCHAR             0       100     ","    11    Expirationdate                       SQL_Latin1_General_CP1_CI_AS
+12      SQLCHAR             0       100     ","    12    Actiontaken                          SQL_Latin1_General_CP1_CI_AS
